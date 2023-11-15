@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Mi CSS -->
+     <link rel="stylesheet" href="style.css">
+     <title>Galería</title>
+   
+</head>
+  
+<body>
+    <!-- Sección Inicio -->
+
+    <section id="inicio">
+        <div class="contenido">
+            <h1>Mi Galería</h1>
+            <nav>
+                <a href="#inicio"> <i class="fa-solid fa-house"></i> Inicio</a>
+                <a href="#artistas"><i class="fa-solid fa-pen-nib"></i> Artistas</a>
+                <a href="#exposiciones"><i class="fa-solid fa-list"></i> Exposiciones</a>
+                <a href="#cursos"><i class="fa-solid fa-book"></i> Cursos</a>
+            </nav>
+            <div class="contenedor-fotos">
+                <img src="img/foto1.jpg" alt="">
+                <img src="img/foto2.jpg" alt="">
+                <img src="img/foto3.jpg" alt="">
+            </div>
+            <div class="info">
+                <p id="parrafo" class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo consequatur aliquid eum rem, quod quam praesentium tenetur inventore neque. Laboriosam excepturi delectus mollitia officia corporis blanditiis amet ea consequatur repellat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Artistas -->
+
+<section id="artistas">
+    <h2> Artistas </h2>
+    <div class="contenido">
+        <div class="fila">
+            <div class="col">
+                <div class="info">
+                    <nav>
+                    <a href="javascript:void(0)" onclick="cambiarArtista(1)" id="op1" class="selected">
+                        Da Vinci
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="cambiarArtista(2)" id="op2">
+                        Van Gogh
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="cambiarArtista(3)" id="op3">
+                        Picasso
+                    </a>
+
+                    </nav>
+
+                    <p id="descripcion" class="descripcion"> Leonardo da Vinci fue un polímata florentino del renacimiento italiano. Fue a la vez pintor, anatomista, arquitescto, paleontólogo, botánico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. Falleció acompañado de Francesco Melzi, a quien legó sus proyectos, diseños y pintutas. </p>
+
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/leonardo.jpg" alt="" id="foto-artista">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Exposiciones  -->
+    <section id="exposiciones">
+        <h2> Exposiciones </h2>
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span> 20 de Febrero</span>
+                    </div>
+                   <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span> Central Palace </span>
+                   </div>
+                   <div class="info">
+                    <i class="fa-regular fa-image"></i>
+                    <span> Obras de Da Vinci</span>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia commodi dolor dicta iusto eligendi consectetur facere aut minima.</p>
+                   </div>
+                   <button type="button" class="btn"> <b>Leer Más</b></button>
+                </div>
+
+                <div class="col">
+                    <div class="info">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span> 05 de Marzo</span>
+                    </div>
+                   <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span> Gran Avenida </span>
+                   </div>
+                   <div class="info">
+                    <i class="fa-regular fa-image"></i>
+                    <span> Obras de Miguel Angel</span>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia commodi dolor dicta iusto eligendi consectetur facere aut minima.</p>
+                   </div>
+                   <button type="button" class="btn"> <b>Leer Más</b></button>
+                </div>
+
+                <div class="col">
+                    <div class="info">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span> 06 de Julio</span>
+                    </div>
+                   <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span> Music Hall </span>
+                   </div>
+                   <div class="info">
+                    <i class="fa-regular fa-image"></i>
+                    <span> Obras de Rodofo Gulf</span>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia commodi dolor dicta iusto eligendi consectetur facere aut minima.</p>
+                   </div>
+                   <button type="button" class="btn"> <b>Leer Más</b></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sección Cursos -->
+    <section id="cursos">
+        <video class="video-container" autoplay muted loop>
+            <source src="videos/video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h2> Adquiere un Curso de Pintura Ahora Mismo!! </h2>
+            <div class="cursos">
+                <button> Curso 1 <br> Comprar </button>
+                <button> Curso 2 <br> Comprar </button>
+                <button> Curso 3 <br> Comprar </button>
+
+            </div>
+
+        </div>
+    </section>
+
+  <!-- Mi JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
